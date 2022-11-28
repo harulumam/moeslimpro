@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    <com.google.android.material.bottomappbar.BottomAppBar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:id="@+id/bottomAppBar"-->
+<!--        app:fabCradleMargin="10dp"-->
+<!--        app:fabCradleRoundedCornerRadius="50dp"-->
+<!--        app:fabCradleVerticalOffset="1dp"-->
+<!--        >-->
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:id="@+id/bottomNavigationView"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            app:menu="@menu/bottom_nav_menu"-->
+<!--            android:background="@drawable/transparent_background"-->
+<!--            android:layout_marginEnd="16dp" />-->
+<!--    </com.google.android.material.bottomappbar.BottomAppBar>-->
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/fab"-->
+<!--        android:src="@drawable/compass"-->
+<!--        app:layout_anchor="@id/bottomAppBar"-->
+<!--        />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp">
+
+
+            <!--bagian pertama-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:onClick="Lokasi">
+
+                    <!--                    <ImageView-->
+                    <!--                        android:layout_width="20dp"-->
+                    <!--                        android:layout_height="20dp"-->
+                    <!--                        android:src="@drawable/ic_baseline_location_on_24">-->
+
+                    <!--                    </ImageView>-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/textView1"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_weight="1"-->
+                    <!--                        android:text="lokasi" />-->
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="Jakarta" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:onClick="Login">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_account_circle_24"
+                        android:gravity="right">
+
+                    </ImageView>
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/textView3"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_weight="1"-->
+                    <!--                        android:gravity="right"-->
+                    <!--                        android:text="Login" />-->
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="0"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:background="@drawable/masjid">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="13 Rabiul Awal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Selasa, 11 Oktober 2022"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180px"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/roundcorner"
+                    android:onClick="JadwalShalat">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Jadwal Shalat" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <!--Asmaul Husna-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <HorizontalScrollView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="left">
+
+                        <ImageButton
+                            android:id="@+id/imageButton9"
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="0dp"
+                            android:background="@drawable/roundcorner" />
+                        <ImageButton
+                            android:id="@+id/imageButton10"
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="0dp"
+                            android:background="@drawable/roundcorner" />
+                        <ImageButton
+                            android:id="@+id/imageButton11"
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="0dp"
+                            android:background="@drawable/roundcorner" />
+                        <ImageButton
+                            android:id="@+id/imageButton12"
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="0dp"
+                            android:background="@drawable/roundcorner" />
+                        <ImageButton
+                            android:id="@+id/imageButton13"
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/roundcorner" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <!--Fitur Fitur-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/masjidterdekat"
+                        android:layout_width="220px"
+                        android:layout_height="230px"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/roundcorner"
+                        android:gravity="center_vertical"
+                        android:onClick="MasjidTerdekat"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150px"
+                            android:layout_height="150px"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/masjidterdekat">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="77dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:text="Masjid"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/adzan"
+                        android:layout_width="220px"
+                        android:layout_height="230px"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/roundcorner"
+                        android:gravity="center_vertical"
+                        android:onClick="Adzan"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150px"
+                            android:layout_height="150px"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/adzan">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="77dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:text="Adzan"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/shalat"
+                        android:layout_width="220px"
+                        android:layout_height="230px"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/roundcorner"
+                        android:gravity="center_vertical"
+                        android:onClick="Shalat"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150px"
+                            android:layout_height="150px"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/shalat">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="77dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:text="Shalat"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dzikir"
+                        android:layout_width="220px"
+                        android:layout_height="230px"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/roundcorner"
+                        android:gravity="center_vertical"
+                        android:onClick="Dzikir"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150px"
+                            android:layout_height="150px"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/dzikir">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="77dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:text="Dzikir"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/doa"
+                        android:layout_width="220px"
+                        android:layout_height="230px"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/roundcorner"
+                        android:gravity="center_vertical"
+                        android:onClick="Doa"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150px"
+                            android:layout_height="150px"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/kumpulandoa">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="77dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:text="Doa"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/hadist"
+                        android:layout_width="220px"
+                        android:layout_height="230px"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/roundcorner"
+                        android:gravity="center_vertical"
+                        android:onClick="Hadist"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150px"
+                            android:layout_height="150px"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/adzan">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="77dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:text="Hadist"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lainnya"
+                        android:layout_width="220px"
+                        android:layout_height="230px"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/roundcorner"
+                        android:gravity="center_vertical"
+                        android:onClick="Lainnya"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150px"
+                            android:layout_height="150px"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/adzan">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="77dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="0"
+                            android:gravity="center"
+                            android:text="Lainnya"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <!--Motivasi-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Motivasi"
+                    android:textSize="14sp"
+                    android:textStyle="bold">
+                </TextView>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp">
+
+                        <LinearLayout
+                            android:layout_width="300dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="300dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/roundcorner">
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="300dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="40dp"
+                            android:background="@drawable/roundcorner">
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <!--Berita Harian-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Berita Harian"
+                    android:textSize="14sp"
+                    android:textStyle="bold">
+                </TextView>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp">
+                        <LinearLayout
+                            android:layout_width="300dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner">
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="300dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/roundcorner">
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="300dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="40dp"
+                            android:background="@drawable/roundcorner">
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <!--Konten-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Konten"
+                    android:textSize="14sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp">
+                        <LinearLayout
+                            android:layout_width="300dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/roundcorner">
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="300dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/roundcorner">
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="300dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="40dp"
+                            android:background="@drawable/roundcorner">
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/bottomAppBar"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleVerticalOffset="1dp"
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bottomNavigationView"
+            android:layout_marginRight="16dp"
+            app:menu="@menu/bottom_nav_menu"
+            android:background="@drawable/transparent_background"
+            android:layout_marginEnd="16dp" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:src="@drawable/compass"
+        app:layout_anchor="@id/bottomAppBar"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
